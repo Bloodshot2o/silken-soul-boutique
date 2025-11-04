@@ -2,6 +2,10 @@ import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Map } from '@/components/Map';
 import { MapPin, Phone, Mail, Clock, Heart, Award, Users, TrendingUp, Shield, Sparkles } from 'lucide-react';
+import storeExterior from '@/assets/store-exterior.jpg';
+import storeInterior from '@/assets/store-interior.jpg';
+import sareeDisplay from '@/assets/saree-display.jpg';
+import artisansWeaving from '@/assets/artisans-weaving.jpg';
 
 export const About = () => {
   const milestones = [
@@ -200,6 +204,84 @@ export const About = () => {
         </div>
       </section>
 
+      {/* Store Gallery Section */}
+      <section className="bg-gradient-to-br from-purple/5 via-emerald/5 to-coral/5 py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-playfair font-bold mb-4">Our Showroom</h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Step into our world of elegance - where tradition meets luxury
+            </p>
+          </div>
+
+          <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+            {/* Store Exterior */}
+            <Card className="overflow-hidden hover-lift group">
+              <div className="relative h-80 overflow-hidden">
+                <img 
+                  src={storeExterior} 
+                  alt="SareeVastra Store Exterior in Surat, Gujarat" 
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <h3 className="text-2xl font-playfair font-bold text-white mb-2">Our Flagship Store</h3>
+                  <p className="text-white/90">Located in the heart of Surat's textile district</p>
+                </div>
+              </div>
+            </Card>
+
+            {/* Store Interior */}
+            <Card className="overflow-hidden hover-lift group">
+              <div className="relative h-80 overflow-hidden">
+                <img 
+                  src={storeInterior} 
+                  alt="Luxurious saree boutique interior with designer collections" 
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <h3 className="text-2xl font-playfair font-bold text-white mb-2">Luxury Interior</h3>
+                  <p className="text-white/90">Browse thousands of sarees in our elegant showroom</p>
+                </div>
+              </div>
+            </Card>
+
+            {/* Saree Display */}
+            <Card className="overflow-hidden hover-lift group">
+              <div className="relative h-80 overflow-hidden">
+                <img 
+                  src={sareeDisplay} 
+                  alt="Premium silk sarees with intricate embroidery and zari work" 
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <h3 className="text-2xl font-playfair font-bold text-white mb-2">Exquisite Collections</h3>
+                  <p className="text-white/90">Handpicked sarees from master weavers across India</p>
+                </div>
+              </div>
+            </Card>
+
+            {/* Artisans Weaving */}
+            <Card className="overflow-hidden hover-lift group">
+              <div className="relative h-80 overflow-hidden">
+                <img 
+                  src={artisansWeaving} 
+                  alt="Traditional Indian artisans weaving handloom sarees" 
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <h3 className="text-2xl font-playfair font-bold text-white mb-2">Our Artisan Partners</h3>
+                  <p className="text-white/90">Supporting traditional craftsmanship across India</p>
+                </div>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Store Location */}
       <section className="container mx-auto px-4 py-20">
         <div className="max-w-6xl mx-auto">
@@ -261,7 +343,9 @@ export const About = () => {
           </div>
 
           {/* Map */}
-          <Map center={[72.8311, 21.1702]} zoom={15} showTokenInput={true} />
+          <Card className="overflow-hidden">
+            <Map center={[72.8311, 21.1702]} zoom={15} showTokenInput={true} />
+          </Card>
         </div>
       </section>
     </div>
