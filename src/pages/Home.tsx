@@ -68,16 +68,6 @@ export const Home = () => {
         </div>
       </section>
 
-      {/* Festival Banner */}
-      <section className="bg-gradient-to-r from-accent to-primary text-primary-foreground py-4">
-        <div className="container mx-auto px-4 text-center">
-          <p className="text-lg md:text-xl font-medium">
-            ✨ <span className="text-secondary">Festive Special:</span> Up to 50% Off on Designer Collections | 
-            <span className="ml-2 underline cursor-pointer hover:text-secondary transition-colors">Shop Now</span>
-          </p>
-        </div>
-      </section>
-
       {/* Categories Section */}
       <section className="container mx-auto px-4 py-20">
         <div className="text-center mb-12 space-y-4">
