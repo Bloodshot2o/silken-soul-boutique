@@ -8,109 +8,113 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Indian Saree E-commerce - Royal Luxury Palette */
-    --background: 40 35% 97%; /* Soft ivory */
-    --foreground: 280 50% 15%; /* Deep purple-black */
+    /* Elegant Saree Boutique - Vibrant Luxury Theme */
+    --background: 30 40% 98%; /* Warm cream */
+    --foreground: 260 60% 12%; /* Rich indigo-black */
 
     --card: 0 0% 100%;
-    --card-foreground: 280 50% 15%;
+    --card-foreground: 260 60% 12%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 280 50% 15%;
+    --popover-foreground: 260 60% 12%;
 
-    /* Royal Purple - Elegant primary */
-    --primary: 280 65% 45%;
+    /* Deep Magenta - Luxurious & Bold */
+    --primary: 320 75% 48%;
     --primary-foreground: 0 0% 100%;
 
-    /* Rich Gold - Luxurious accent */
-    --secondary: 45 100% 51%;
-    --secondary-foreground: 280 50% 15%;
+    /* Warm Rose Gold - Sophisticated accent */
+    --secondary: 25 85% 62%;
+    --secondary-foreground: 260 60% 12%;
 
-    /* Soft Muted */
-    --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 46.1%;
+    /* Soft Neutral */
+    --muted: 30 20% 94%;
+    --muted-foreground: 260 15% 45%;
 
-    /* Emerald Green - Fresh vitality */
-    --accent: 160 85% 35%;
+    /* Vibrant Teal - Fresh energy */
+    --accent: 180 70% 42%;
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
-    --ring: 280 65% 45%;
+    --border: 30 20% 88%;
+    --input: 30 20% 88%;
+    --ring: 320 75% 48%;
 
-    --radius: 0.875rem;
+    --radius: 1rem;
 
-    /* Extended semantic tokens */
-    --gold: 45 100% 51%;
-    --gold-light: 48 100% 65%;
-    --gold-dark: 42 92% 45%;
-    --purple: 280 65% 45%;
-    --purple-dark: 280 70% 35%;
-    --purple-light: 280 60% 65%;
-    --emerald: 160 85% 35%;
-    --emerald-light: 160 75% 50%;
-    --emerald-dark: 160 90% 28%;
-    --teal: 175 60% 42%;
-    --teal-light: 175 55% 58%;
-    --coral: 15 90% 60%;
-    --coral-light: 15 85% 72%;
-    --cream: 40 35% 97%;
-    --ivory: 40 30% 95%;
-    --rose: 340 75% 60%;
+    /* Rich Semantic Tokens */
+    --gold: 45 95% 58%;
+    --gold-light: 48 90% 70%;
+    --gold-dark: 42 100% 48%;
+    --purple: 280 70% 52%;
+    --purple-dark: 280 80% 38%;
+    --purple-light: 280 65% 68%;
+    --emerald: 155 75% 42%;
+    --emerald-light: 155 65% 55%;
+    --emerald-dark: 155 85% 32%;
+    --teal: 180 70% 42%;
+    --teal-light: 180 60% 58%;
+    --coral: 12 88% 65%;
+    --coral-light: 12 82% 75%;
+    --cream: 30 40% 98%;
+    --ivory: 35 35% 96%;
+    --rose: 340 82% 62%;
+    --magenta: 320 75% 48%;
+    --magenta-light: 320 70% 62%;
 
-    /* Enhanced Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(280 65% 45%), hsl(280 60% 55%));
-    --gradient-secondary: linear-gradient(135deg, hsl(45 100% 51%), hsl(48 100% 65%));
-    --gradient-accent: linear-gradient(135deg, hsl(160 85% 35%), hsl(175 60% 42%));
-    --gradient-hero: linear-gradient(120deg, hsl(280 65% 45% / 0.92), hsl(160 85% 35% / 0.88), hsl(45 100% 51% / 0.85));
-    --gradient-card: linear-gradient(to bottom right, hsl(280 65% 45% / 0.05), hsl(45 100% 51% / 0.05));
-    --gradient-overlay: linear-gradient(180deg, transparent, hsl(280 50% 15% / 0.75));
-    --gradient-shine: linear-gradient(90deg, transparent, hsl(45 100% 51% / 0.3), transparent);
+    /* Stunning Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(320 75% 48%), hsl(340 82% 62%));
+    --gradient-secondary: linear-gradient(135deg, hsl(25 85% 62%), hsl(45 95% 58%));
+    --gradient-accent: linear-gradient(135deg, hsl(180 70% 42%), hsl(155 75% 42%));
+    --gradient-hero: linear-gradient(125deg, hsl(320 75% 48% / 0.95), hsl(280 70% 52% / 0.9), hsl(180 70% 42% / 0.88));
+    --gradient-card: linear-gradient(to bottom right, hsl(320 75% 48% / 0.08), hsl(25 85% 62% / 0.08));
+    --gradient-overlay: linear-gradient(180deg, transparent 0%, hsl(260 60% 12% / 0.8) 100%);
+    --gradient-shine: linear-gradient(90deg, transparent, hsl(45 95% 58% / 0.4), transparent);
+    --gradient-vibrant: linear-gradient(90deg, hsl(320 75% 48%), hsl(280 70% 52%), hsl(180 70% 42%), hsl(155 75% 42%));
 
-    /* Enhanced Shadows */
-    --shadow-luxury: 0 12px 48px -12px hsl(280 65% 45% / 0.35);
-    --shadow-gold: 0 10px 36px -10px hsl(45 100% 51% / 0.45);
-    --shadow-card: 0 8px 32px -8px hsl(280 50% 15% / 0.12);
-    --shadow-accent: 0 8px 32px -8px hsl(160 85% 35% / 0.35);
-    --shadow-glow: 0 0 48px hsl(280 65% 45% / 0.25);
+    /* Luxurious Shadows */
+    --shadow-luxury: 0 16px 56px -14px hsl(320 75% 48% / 0.4);
+    --shadow-gold: 0 12px 40px -12px hsl(45 95% 58% / 0.5);
+    --shadow-card: 0 10px 36px -10px hsl(260 60% 12% / 0.15);
+    --shadow-accent: 0 10px 36px -10px hsl(180 70% 42% / 0.4);
+    --shadow-glow: 0 0 56px hsl(320 75% 48% / 0.3);
+    --shadow-soft: 0 4px 24px -4px hsl(260 60% 12% / 0.08);
 
-    /* Animations */
-    --transition-smooth: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-bounce: all 0.55s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    --transition-spring: all 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    /* Smooth Animations */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --transition-spring: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
 
   .dark {
-    --background: 280 40% 8%;
-    --foreground: 40 35% 97%;
+    --background: 260 45% 6%;
+    --foreground: 30 40% 98%;
 
-    --card: 280 35% 12%;
-    --card-foreground: 40 35% 97%;
+    --card: 260 40% 10%;
+    --card-foreground: 30 40% 98%;
 
-    --popover: 280 35% 12%;
-    --popover-foreground: 40 35% 97%;
+    --popover: 260 40% 10%;
+    --popover-foreground: 30 40% 98%;
 
-    --primary: 280 70% 55%;
+    --primary: 320 80% 58%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 45 100% 55%;
-    --secondary-foreground: 280 40% 8%;
+    --secondary: 25 85% 68%;
+    --secondary-foreground: 260 45% 6%;
 
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
+    --muted: 260 30% 15%;
+    --muted-foreground: 260 10% 65%;
 
-    --accent: 160 75% 45%;
+    --accent: 180 70% 50%;
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 0 72% 42%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 280 70% 55%;
+    --border: 260 30% 18%;
+    --input: 260 30% 18%;
+    --ring: 320 80% 58%;
   }
 }
 
