@@ -8,126 +8,122 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Quirky Artisan Saree Boutique - Bold & Unconventional */
-    --background: 45 45% 96%; /* Soft warm sand */
-    --foreground: 230 55% 8%; /* Deep navy-black */
+    /* Premium Saree Boutique - Sophisticated Jewel Tones */
+    --background: 280 25% 97%; /* Soft lavender-white */
+    --foreground: 240 60% 8%; /* Deep midnight blue */
 
     --card: 0 0% 100%;
-    --card-foreground: 230 55% 8%;
+    --card-foreground: 240 60% 8%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 230 55% 8%;
+    --popover-foreground: 240 60% 8%;
 
-    /* Electric Fuchsia - Bold & Daring */
-    --primary: 310 85% 52%;
+    /* Deep Sapphire - Regal & Elegant */
+    --primary: 240 75% 45%;
     --primary-foreground: 0 0% 100%;
 
-    /* Burnt Orange - Warm & Artistic */
-    --secondary: 20 90% 58%;
-    --secondary-foreground: 0 0% 100%;
+    /* Amber Gold - Luxurious warmth */
+    --secondary: 35 95% 55%;
+    --secondary-foreground: 240 60% 8%;
 
-    /* Soft warm neutral */
-    --muted: 45 30% 92%;
-    --muted-foreground: 230 20% 42%;
+    /* Neutral elegance */
+    --muted: 280 15% 94%;
+    --muted-foreground: 240 20% 44%;
 
-    /* Cobalt Blue - Electric energy */
-    --accent: 220 85% 55%;
+    /* Ruby Red - Bold vitality */
+    --accent: 355 85% 52%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 45 25% 85%;
-    --input: 45 25% 85%;
-    --ring: 310 85% 52%;
+    --border: 280 15% 88%;
+    --input: 280 15% 88%;
+    --ring: 240 75% 45%;
 
-    --radius: 1.25rem;
+    --radius: 0.875rem;
 
-    /* Quirky Artistic Tokens */
-    --gold: 42 100% 55%;
-    --gold-light: 45 95% 68%;
-    --gold-dark: 38 100% 45%;
-    --purple: 270 75% 58%;
-    --purple-dark: 270 85% 42%;
-    --purple-light: 270 70% 72%;
-    --emerald: 165 75% 45%;
-    --emerald-light: 165 65% 58%;
-    --emerald-dark: 165 85% 35%;
-    --teal: 185 75% 48%;
-    --teal-light: 185 65% 62%;
-    --coral: 15 92% 68%;
-    --coral-light: 15 85% 78%;
-    --cream: 45 45% 96%;
-    --ivory: 40 40% 94%;
-    --rose: 345 85% 65%;
-    --magenta: 310 85% 52%;
-    --magenta-light: 310 75% 68%;
-    --fuchsia: 310 85% 52%;
-    --fuchsia-dark: 310 90% 38%;
-    --orange: 20 90% 58%;
-    --orange-light: 20 85% 70%;
-    --cobalt: 220 85% 55%;
-    --navy: 230 55% 8%;
-    --sand: 45 45% 96%;
+    /* Sophisticated Jewel Tokens */
+    --gold: 42 95% 52%;
+    --gold-light: 45 90% 65%;
+    --gold-dark: 38 100% 42%;
+    --sapphire: 240 75% 45%;
+    --sapphire-light: 240 65% 60%;
+    --sapphire-dark: 240 85% 32%;
+    --ruby: 355 85% 52%;
+    --ruby-light: 355 75% 65%;
+    --ruby-dark: 355 90% 38%;
+    --emerald: 160 75% 38%;
+    --emerald-light: 160 65% 52%;
+    --emerald-dark: 160 85% 28%;
+    --amethyst: 280 70% 55%;
+    --amethyst-light: 280 60% 68%;
+    --amethyst-dark: 280 80% 42%;
+    --topaz: 35 95% 55%;
+    --topaz-light: 38 90% 68%;
+    --coral: 10 90% 62%;
+    --pearl: 280 25% 97%;
+    --ivory: 40 35% 95%;
+    --rose: 340 80% 58%;
 
-    /* Vibrant Unconventional Gradients */
-    --gradient-primary: linear-gradient(140deg, hsl(310 85% 52%), hsl(345 85% 65%), hsl(20 90% 58%));
-    --gradient-secondary: linear-gradient(140deg, hsl(20 90% 58%), hsl(42 100% 55%), hsl(45 95% 68%));
-    --gradient-accent: linear-gradient(140deg, hsl(220 85% 55%), hsl(185 75% 48%), hsl(165 75% 45%));
-    --gradient-hero: linear-gradient(130deg, hsl(310 85% 52% / 0.96), hsl(220 85% 55% / 0.92), hsl(20 90% 58% / 0.88));
-    --gradient-card: linear-gradient(to bottom right, hsl(310 85% 52% / 0.1), hsl(220 85% 55% / 0.08));
-    --gradient-overlay: linear-gradient(180deg, transparent 0%, hsl(230 55% 8% / 0.85) 100%);
-    --gradient-shine: linear-gradient(90deg, transparent, hsl(42 100% 55% / 0.5), transparent);
-    --gradient-vibrant: linear-gradient(95deg, hsl(310 85% 52%), hsl(270 75% 58%), hsl(220 85% 55%), hsl(185 75% 48%));
-    --gradient-warm: linear-gradient(120deg, hsl(20 90% 58%), hsl(345 85% 65%), hsl(310 85% 52%));
-    --gradient-cool: linear-gradient(120deg, hsl(165 75% 45%), hsl(185 75% 48%), hsl(220 85% 55%));
-    --gradient-sunset: linear-gradient(100deg, hsl(310 85% 52%), hsl(20 90% 58%), hsl(42 100% 55%));
+    /* Elegant Rich Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(240 75% 45%), hsl(280 70% 55%), hsl(240 65% 60%));
+    --gradient-secondary: linear-gradient(135deg, hsl(35 95% 55%), hsl(42 95% 52%), hsl(45 90% 65%));
+    --gradient-accent: linear-gradient(135deg, hsl(355 85% 52%), hsl(340 80% 58%), hsl(10 90% 62%));
+    --gradient-hero: linear-gradient(125deg, hsl(240 75% 45% / 0.95), hsl(355 85% 52% / 0.9), hsl(35 95% 55% / 0.88));
+    --gradient-card: linear-gradient(to bottom right, hsl(240 75% 45% / 0.06), hsl(280 70% 55% / 0.04));
+    --gradient-overlay: linear-gradient(180deg, transparent 0%, hsl(240 60% 8% / 0.85) 100%);
+    --gradient-shine: linear-gradient(90deg, transparent, hsl(42 95% 52% / 0.45), transparent);
+    --gradient-jewel: linear-gradient(90deg, hsl(240 75% 45%), hsl(280 70% 55%), hsl(355 85% 52%), hsl(35 95% 55%));
+    --gradient-warm: linear-gradient(120deg, hsl(355 85% 52%), hsl(35 95% 55%), hsl(42 95% 52%));
+    --gradient-cool: linear-gradient(120deg, hsl(160 75% 38%), hsl(240 75% 45%), hsl(280 70% 55%));
+    --gradient-luxury: linear-gradient(100deg, hsl(240 75% 45%), hsl(280 70% 55%), hsl(355 85% 52%), hsl(35 95% 55%));
 
-    /* Dramatic Shadows with Color */
-    --shadow-luxury: 0 20px 60px -16px hsl(310 85% 52% / 0.45);
-    --shadow-gold: 0 14px 44px -14px hsl(42 100% 55% / 0.55);
-    --shadow-card: 0 12px 40px -12px hsl(230 55% 8% / 0.18);
-    --shadow-accent: 0 12px 40px -12px hsl(220 85% 55% / 0.45);
-    --shadow-glow: 0 0 64px hsl(310 85% 52% / 0.35);
-    --shadow-soft: 0 6px 28px -6px hsl(230 55% 8% / 0.1);
-    --shadow-vibrant: 0 16px 52px -16px hsl(20 90% 58% / 0.4);
-    --shadow-colorful: 0 12px 48px -8px hsl(310 85% 52% / 0.3), 0 8px 32px -8px hsl(220 85% 55% / 0.2);
+    /* Refined Shadows */
+    --shadow-luxury: 0 20px 60px -18px hsl(240 75% 45% / 0.45);
+    --shadow-gold: 0 14px 48px -14px hsl(42 95% 52% / 0.55);
+    --shadow-card: 0 12px 40px -12px hsl(240 60% 8% / 0.16);
+    --shadow-accent: 0 12px 40px -12px hsl(355 85% 52% / 0.45);
+    --shadow-glow: 0 0 64px hsl(240 75% 45% / 0.35);
+    --shadow-soft: 0 6px 28px -6px hsl(240 60% 8% / 0.1);
+    --shadow-vibrant: 0 16px 52px -16px hsl(355 85% 52% / 0.42);
+    --shadow-jewel: 0 12px 48px -8px hsl(240 75% 45% / 0.3), 0 8px 32px -8px hsl(280 70% 55% / 0.2);
 
-    /* Playful Animations */
-    --transition-smooth: all 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+    /* Smooth Elegant Animations */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.65s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     --transition-spring: all 0.55s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    --transition-elastic: all 0.7s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    --transition-elegant: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
 
   .dark {
-    --background: 230 50% 5%;
-    --foreground: 45 45% 96%;
+    --background: 240 50% 4%;
+    --foreground: 280 25% 97%;
 
-    --card: 230 45% 9%;
-    --card-foreground: 45 45% 96%;
+    --card: 240 45% 8%;
+    --card-foreground: 280 25% 97%;
 
-    --popover: 230 45% 9%;
-    --popover-foreground: 45 45% 96%;
+    --popover: 240 45% 8%;
+    --popover-foreground: 280 25% 97%;
 
-    --primary: 310 90% 62%;
+    --primary: 240 80% 58%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 20 90% 65%;
-    --secondary-foreground: 230 50% 5%;
+    --secondary: 35 95% 62%;
+    --secondary-foreground: 240 50% 4%;
 
-    --muted: 230 35% 14%;
-    --muted-foreground: 230 12% 68%;
+    --muted: 240 35% 12%;
+    --muted-foreground: 240 12% 70%;
 
-    --accent: 220 85% 62%;
+    --accent: 355 85% 60%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 72% 52%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 230 35% 20%;
-    --input: 230 35% 20%;
-    --ring: 310 90% 62%;
+    --border: 240 35% 18%;
+    --input: 240 35% 18%;
+    --ring: 240 80% 58%;
   }
 }
 
@@ -148,26 +144,56 @@ All colors MUST be HSL.
 
 @layer utilities {
   .text-gradient-gold {
-    @apply bg-gradient-to-r from-[hsl(var(--gold))] via-[hsl(var(--gold-light))] to-[hsl(var(--orange))] bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-[hsl(var(--gold))] via-[hsl(var(--topaz))] to-[hsl(var(--gold-light))] bg-clip-text text-transparent;
   }
 
   .text-gradient-vibrant {
-    @apply bg-[var(--gradient-vibrant)] bg-clip-text text-transparent;
+    @apply bg-[var(--gradient-jewel)] bg-clip-text text-transparent;
   }
 
-  .text-gradient-fuchsia {
-    @apply bg-gradient-to-r from-[hsl(var(--fuchsia))] to-[hsl(var(--magenta-light))] bg-clip-text text-transparent;
+  .text-gradient-sapphire {
+    @apply bg-gradient-to-r from-[hsl(var(--sapphire))] to-[hsl(var(--sapphire-light))] bg-clip-text text-transparent;
   }
 
   .bg-pattern-mandala {
-    background-image: radial-gradient(circle at 25% 25%, hsl(var(--fuchsia) / 0.06) 1px, transparent 1px),
-                      radial-gradient(circle at 75% 75%, hsl(var(--cobalt) / 0.06) 1px, transparent 1px);
-    background-size: 48px 48px;
+    background-image: radial-gradient(circle at 25% 25%, hsl(var(--sapphire) / 0.05) 1.5px, transparent 1.5px),
+                      radial-gradient(circle at 75% 75%, hsl(var(--ruby) / 0.05) 1.5px, transparent 1.5px);
+    background-size: 52px 52px;
+    animation: pattern-float 20s ease-in-out infinite;
+  }
+
+  @keyframes pattern-float {
+    0%, 100% {
+      background-position: 0% 0%, 100% 100%;
+    }
+    50% {
+      background-position: 100% 100%, 0% 0%;
+    }
   }
 
   .bg-pattern-dots {
     background-image: radial-gradient(circle, hsl(var(--primary) / 0.08) 1.5px, transparent 1.5px);
-    background-size: 32px 32px;
+    background-size: 36px 36px;
+  }
+
+  .bg-animated-gradient {
+    background: linear-gradient(270deg, 
+      hsl(var(--sapphire) / 0.03), 
+      hsl(var(--amethyst) / 0.03), 
+      hsl(var(--ruby) / 0.03),
+      hsl(var(--topaz) / 0.03)
+    );
+    background-size: 800% 800%;
+    animation: gradient-shift 15s ease infinite;
+  }
+
+  @keyframes gradient-shift {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
   }
 
   .hover-lift {
@@ -176,7 +202,45 @@ All colors MUST be HSL.
   }
 
   .hover-lift:hover {
-    box-shadow: var(--shadow-colorful);
+    box-shadow: var(--shadow-jewel);
+  }
+
+  .product-card-hover {
+    @apply relative overflow-hidden;
+    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .product-card-hover::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, 
+      hsl(var(--sapphire) / 0) 0%, 
+      hsl(var(--sapphire) / 0.08) 50%,
+      hsl(var(--ruby) / 0.08) 100%
+    );
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+  }
+
+  .product-card-hover:hover::before {
+    opacity: 1;
+  }
+
+  .product-card-hover::after {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    background: var(--gradient-jewel);
+    opacity: 0;
+    border-radius: inherit;
+    z-index: -1;
+    transition: opacity 0.4s ease;
+  }
+
+  .product-card-hover:hover::after {
+    opacity: 0.15;
   }
 
   .shimmer {
@@ -320,7 +384,7 @@ All colors MUST be HSL.
   @keyframes rotateIn {
     from {
       opacity: 0;
-      transform: rotate(-15deg) scale(0.9);
+      transform: rotate(-10deg) scale(0.9);
     }
     to {
       opacity: 1;
@@ -328,16 +392,23 @@ All colors MUST be HSL.
     }
   }
 
-  .color-shift {
-    animation: colorShift 8s ease-in-out infinite;
+  .scroll-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: scrollReveal 0.8s ease-out forwards;
   }
 
-  @keyframes colorShift {
-    0%, 100% {
-      filter: hue-rotate(0deg);
+  @keyframes scrollReveal {
+    to {
+      opacity: 1;
+      transform: translateY(0);
     }
-    50% {
-      filter: hue-rotate(20deg);
-    }
+  }
+
+  .parallax-bg {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }

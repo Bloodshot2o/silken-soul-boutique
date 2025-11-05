@@ -74,13 +74,13 @@ export const Shop = () => {
   };
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-animated-gradient">
       {/* Page Header */}
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary via-accent to-secondary opacity-95" />
         <div className="absolute inset-0 bg-pattern-mandala" />
         <div className="container mx-auto px-4 text-center relative z-10">
-          <Badge className="mb-4 bg-secondary text-secondary-foreground px-6 py-2 text-base animate-bounce">
+          <Badge className="mb-4 bg-secondary text-secondary-foreground px-6 py-2 text-base animate-bounce-in">
             ✨ New Collection Just Dropped!
           </Badge>
           <h1 className="text-5xl md:text-7xl font-playfair font-bold mb-6 text-primary-foreground animate-fade-in">
@@ -272,21 +272,21 @@ export const Shop = () => {
             {/* Products Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
               {products.map((product) => (
-                <Card key={product.id} className="group overflow-hidden hover-lift border-2 hover:border-primary transition-all duration-300 relative">
+                <Card key={product.id} className="product-card-hover group overflow-hidden border-2 hover:border-primary transition-all duration-500 relative bg-card/80 backdrop-blur-sm">
                   {/* Badges */}
                   <div className="absolute top-3 left-3 z-20 flex flex-col gap-2">
                     {product.trending && (
-                      <Badge className="bg-accent text-accent-foreground font-semibold">
+                      <Badge className="bg-accent text-accent-foreground font-semibold shadow-lg">
                         🔥 Trending
                       </Badge>
                     )}
                     {product.newArrival && (
-                      <Badge className="bg-secondary text-secondary-foreground font-semibold">
+                      <Badge className="bg-secondary text-secondary-foreground font-semibold shadow-lg">
                         ✨ New
                       </Badge>
                     )}
                     {product.exclusive && (
-                      <Badge className="bg-primary text-primary-foreground font-semibold">
+                      <Badge className="bg-primary text-primary-foreground font-semibold shadow-lg">
                         👑 Exclusive
                       </Badge>
                     )}
@@ -297,16 +297,16 @@ export const Shop = () => {
                       <img 
                         src={product.image} 
                         alt={product.name}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        className="w-full h-full object-cover group-hover:scale-110 group-hover:rotate-2 transition-all duration-700 ease-out"
                       />
                     </Link>
                     
-                    {/* Hover Actions */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6 space-x-3">
+                    {/* Hover Actions with enhanced effects */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-primary/95 via-accent/60 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-end justify-center pb-6 space-x-3">
                       <Button 
                         variant="secondary" 
                         size="icon"
-                        className="rounded-full shadow-xl"
+                        className="rounded-full shadow-xl transform translate-y-8 group-hover:translate-y-0 transition-all duration-500 delay-75 hover:scale-110"
                         onClick={() => handleAddToWishlist(product.name)}
                       >
                         <Heart className="w-5 h-5" />
@@ -314,7 +314,7 @@ export const Shop = () => {
                       <Button 
                         variant="gold" 
                         size="icon"
-                        className="rounded-full shadow-xl"
+                        className="rounded-full shadow-xl transform translate-y-8 group-hover:translate-y-0 transition-all duration-500 delay-150 hover:scale-110"
                         onClick={() => handleAddToCart(product.name)}
                       >
                         <ShoppingCart className="w-5 h-5" />
@@ -322,7 +322,7 @@ export const Shop = () => {
                     </div>
 
                     {/* Rating Badge */}
-                    <div className="absolute top-3 right-3 bg-background/95 backdrop-blur-sm px-3 py-1.5 rounded-full text-sm font-bold flex items-center space-x-1 shadow-lg">
+                    <div className="absolute top-3 right-3 bg-background/95 backdrop-blur-sm px-3 py-1.5 rounded-full text-sm font-bold flex items-center space-x-1 shadow-lg group-hover:scale-110 transition-transform duration-300">
                       <Star className="w-4 h-4 fill-secondary text-secondary" />
                       <span>{product.rating}</span>
                     </div>
